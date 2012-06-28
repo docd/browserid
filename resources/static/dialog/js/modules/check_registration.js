@@ -16,6 +16,8 @@ BrowserID.Modules.CheckRegistration = (function() {
       var self=this;
       options = options || {};
       options.required = !!options.required;
+      options.sitename = user.getHostname();
+
 
       self.renderWait("confirm_email", options);
 

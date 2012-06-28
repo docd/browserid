@@ -135,6 +135,7 @@ section > .contents {
      * otherwise the buttons slide right with the arrow
      */
     width: 250px;
+    font-size: 13px;
 }
 
 
@@ -345,7 +346,7 @@ div#required_email {
 }
 
 .inputs > li {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .inputs > li > label {
@@ -375,13 +376,13 @@ div#required_email {
 }
 
 .submit {
-    margin-top: 10px;
+    margin-top: 8px;
     color: #333;
     font-size: 11px;
 }
 
 .submit > p {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .tospp {

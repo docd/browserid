@@ -44,6 +44,7 @@ BrowserID.State = (function() {
       self.hostname = info.hostname;
       self.privacyURL = info.privacyURL;
       self.tosURL = info.tosURL;
+      self.siteName = info.siteName || info.hostname;
       requiredEmail = info.requiredEmail;
 
       startAction(false, "doRPInfo", info);
@@ -92,8 +93,11 @@ BrowserID.State = (function() {
     });
 
     handleState("authenticate", function(msg, info) {
-      info.privacyURL = self.privacyURL;
-      info.tosURL = self.tosURL;
+      _.extend(info, {
+        privacyURL: self.privacyURL,
+        tosURL: self.tosURL,
+        siteName: self.siteName
+      });
       startAction("doAuthenticate", info);
     });
 
@@ -217,7 +221,6 @@ BrowserID.State = (function() {
 
     handleState("pick_email", function() {
       startAction("doPickEmail", {
-        origin: self.hostname,
         privacyURL: self.privacyURL,
         tosURL: self.tosURL
       });

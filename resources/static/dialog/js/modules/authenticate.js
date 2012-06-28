@@ -157,7 +157,7 @@ BrowserID.Modules.Authenticate = (function() {
 
       var self=this;
       self.renderDialog("authenticate", {
-        sitename: user.getHostname(),
+        siteName: options.siteName,
         email: lastEmail,
         privacy_url: options.privacyURL,
         tos_url: options.tosURL
