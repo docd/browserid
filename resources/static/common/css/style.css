@@ -56,8 +56,9 @@ ul, li {
   list-style-type: none;
 }
 
-.mono {
-  font-family: 'Monaco', monospace;
+.hidden {
+  visibility: hidden;
+  height: 0;
 }
 
 .tooltip {
@@ -132,6 +133,18 @@ input[type=password]:disabled {
      * field */
     box-shadow: none;
     border-color: #b2b2b2;
+}
+
+label + input[type=text],
+label + input[type=password],
+label + input[type=email] {
+  margin-top: 8px;
+}
+
+label.hidden + input[type=text],
+label.hidden + input[type=password],
+label.hidden + input[type=email] {
+  margin-top: 0;
 }
 
 input[type=radio],
@@ -282,11 +295,25 @@ button.negative:active,
     box-shadow: 0 0 5px #333 inset;
 }
 
+.tospp {
+  line-height: 14px;
+}
+
+.buttonrow {
+  line-height: 28px;
+}
+
+.buttonrow > .right {
+  margin-right: 15px;
+}
+
+/*
 .submit #cancel {
   float: right;
   margin-right: 15px;
   line-height: 28px;
 }
+*/
 
 a.secondary[disabled], .submit_disabled a.secondary, .submit_disabled a.secondary:focus, .submit_disabled a.secondary:active {
   color: #999;
