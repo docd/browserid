@@ -241,7 +241,7 @@ section > .contents {
 
 #signIn .table {
     background-color: #eff0f2;
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .arrowContainer {
@@ -348,10 +348,6 @@ div#required_email {
   margin-top: 10px;
 }
 
-.inputs > li:first-child {
-  margin-top: 0;
-}
-
 .inputs > li > label {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -382,7 +378,6 @@ div#required_email {
     margin-top: 10px;
     color: #333;
     font-size: 11px;
-    line-height: 14px;
 }
 
 .submit > p {
