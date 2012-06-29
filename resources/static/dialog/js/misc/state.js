@@ -21,6 +21,7 @@ BrowserID.State = (function() {
       primaryVerificationInfo;
 
   function startStateMachine() {
+    /*jshint validthis: true*/
     var self = this,
         handleState = function(msg, callback) {
           self.subscribe(msg, function(msg, info) {
@@ -157,7 +158,12 @@ BrowserID.State = (function() {
 
     handleState("user_staged", function(msg, info) {
       self.stagedEmail = info.email;
-      info.required = !!requiredEmail;
+
+      _.extend(info, {
+        required: !!requiredEmail,
+        siteName: self.siteName
+      });
+
       startAction("doConfirmUser", info);
     });
 
@@ -455,7 +461,10 @@ BrowserID.State = (function() {
 
     handleState("email_staged", function(msg, info) {
       self.stagedEmail = info.email;
-      info.required = !!requiredEmail;
+      _.extend(info, {
+        required: !!requiredEmail,
+        siteName: self.siteName
+      });
       startAction("doConfirmEmail", info);
     });
 
