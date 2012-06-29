@@ -442,6 +442,19 @@ footer .help {
   color: #333;
 }
 
+.submit {
+    margin-top: 10px;
+}
+
+.submit > p {
+  margin-top: 10px;
+}
+
+.tospp {
+  line-height: 1.2;
+}
+
+
 #showDevelopment {
   position: absolute;
   top: 0;

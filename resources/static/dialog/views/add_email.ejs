@@ -31,20 +31,10 @@
           </li>
       </ul>
 
-      <% if (privacy_url && tos_url) { %>
-        <p class="submit cf tospp">
-          <%= format(
-                gettext('By clicking %s, you confirm that you accept this site\'s <a %s>Terms of Use</a> and <a %s>Privacy Policy</a>.'),
-                     [ gettext('add'),
-                       format(' href="%s" target="_new"', [tos_url]),
-                       format(' href="%s" target="_new"', [privacy_url])
-                     ]) %>
-        </p>
-      <% } %>
-        <p class="submit cf buttonrow">
-          <button id="addNewEmail"><%= gettext('add') %></button>
-          <a href="#" id="cancel" class="right"><%= gettext('cancel') %></a>
-        </p>
+      <p class="submit cf buttonrow">
+        <button id="addNewEmail"><%= gettext('add') %></button>
+        <a href="#" id="cancel" class="right"><%= gettext('cancel') %></a>
+      </p>
 
   </div>
 

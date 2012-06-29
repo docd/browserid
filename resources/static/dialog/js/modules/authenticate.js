@@ -1,4 +1,4 @@
-/*jshint browser:true, jQuery: true, forin: true, laxbreak:true */
+/*jshint browser:true, jquery: true, forin: true, laxbreak:true */
 /*global BrowserID:true, PageController: true */
 /* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -25,6 +25,7 @@ BrowserID.Modules.Authenticate = (function() {
   }
 
   function initialState(info) {
+    /*jshint validthis: true*/
     var self=this;
 
     self.submit = checkEmail;
@@ -33,11 +34,13 @@ BrowserID.Modules.Authenticate = (function() {
     }
     else {
       showHint("start");
+      enterEmailState.call(self);
       complete(info.ready);
     }
   }
 
   function checkEmail(info) {
+    /*jshint validthis: true*/
     var email = getEmail(),
         self = this;
 
@@ -69,6 +72,7 @@ BrowserID.Modules.Authenticate = (function() {
   }
 
   function createSecondaryUser(callback) {
+    /*jshint validthis: true*/
     var self=this,
         email = getEmail();
 
@@ -80,6 +84,7 @@ BrowserID.Modules.Authenticate = (function() {
   }
 
   function authenticate() {
+    /*jshint validthis: true*/
     var email = getEmail(),
         pass = helpers.getAndValidatePassword("#password"),
         self = this;
@@ -98,7 +103,7 @@ BrowserID.Modules.Authenticate = (function() {
   function showHint(showSelector, callback) {
     _.each(hints, function(className) {
       if(className != showSelector) {
-        $("." + className).not("." + showSelector).hide();
+        dom.hide("." + className + ":not(." + showSelector + ")");
       }
     });
 
@@ -112,14 +117,16 @@ BrowserID.Modules.Authenticate = (function() {
     });
   }
 
-  function enterEmailState(el) {
-    if (!$("#email").is(":disabled")) {
+  function enterEmailState() {
+    /*jshint validthis: true*/
+    if (!dom.is("#email", ":disabled")) {
       this.submit = checkEmail;
       showHint("start");
     }
   }
 
   function enterPasswordState(callback) {
+    /*jshint validthis: true*/
     var self=this;
 
     dom.setInner("#password", "");
@@ -129,10 +136,13 @@ BrowserID.Modules.Authenticate = (function() {
     showHint("returning", function() {
       dom.focus("#password");
     });
+
+
     complete(callback);
   }
 
   function forgotPassword() {
+    /*jshint validthis: true*/
     var email = getEmail();
     if (email) {
       var info = addressInfo || { email: email };
@@ -141,6 +151,7 @@ BrowserID.Modules.Authenticate = (function() {
   }
 
   function emailKeyUp() {
+    /*jshint validthis: true*/
     var newEmail = dom.getInner("#email");
     if (newEmail !== lastEmail) {
       lastEmail = newEmail;
@@ -158,12 +169,19 @@ BrowserID.Modules.Authenticate = (function() {
       var self=this;
       self.renderDialog("authenticate", {
         siteName: options.siteName,
-        email: lastEmail,
-        privacy_url: options.privacyURL,
-        tos_url: options.tosURL
+        email: lastEmail
       });
 
-      $(".returning,.start").hide();
+      dom.hide(".returning,.start");
+
+      // We have to show the TOS/PP agreements to *all* users here. Users who
+      // are already authenticated to their IdP but do not have a Persona
+      // account automatically have an account created with no further
+      // interaction.  To make sure they see the TOS/PP agreement, show it
+      // here.
+      if (options.siteTOSPP) {
+        dialogHelpers.showRPTosPP.call(self);
+      }
 
       self.bind("#email", "keyup", emailKeyUp);
       self.click("#forgotPassword", forgotPassword);
