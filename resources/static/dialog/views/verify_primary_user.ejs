@@ -27,12 +27,13 @@
       </p>
 
 <% } else { %>
-    <%= format(gettext("You must sign in with your email provider to verify ownership of this address. This window will be redirected to %s"), ["<p><strong>" + auth_url + "</strong></p>"]) %>
-
+	<h3><%= format(gettext("Your %s makes this easy"), ["--IDP--"]) %></h3>
+    <%= format(gettext("Persona lets you use your %s account to sign into sites like %s."), ["--IDP--", "--REFERRING SITE--"]) %>
+	<%= format(gettext("We will redirect you to %s. Once you verify your account there, you will be signed in to %s."), ["--IDP--", "--REFERRING SITE--"]) %>
     <p class="submit cf buttonrow">
-        <button id="verifyWithPrimary"><%= gettext("verify") %></button>
-        <a href="#" id="cancel" class="right"><%= gettext("cancel") %></a>
+        <button id="verifyWithPrimary"><%= gettext("sign in with --IPD--") %></button>
     </p>
+    <a href="#" id="cancel" class="emphasize right"><%= gettext("Use a different email address") %></a>
 
     <% if (personaTOSPP) { %>
       <p id="persona_tospp" class="submit tospp">
