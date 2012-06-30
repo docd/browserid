@@ -3,7 +3,7 @@
       "": {
          "Project-Id-Version": " PACKAGE VERSION",
          "Report-Msgid-Bugs-To": " ",
-         "POT-Creation-Date": " 2012-03-02 15:24+0100",
+         "POT-Creation-Date": " 2012-06-30 14:10+0100",
          "PO-Revision-Date": " YEAR-MO-DA HO:MI+ZONE",
          "Last-Translator": " FULL NAME <EMAIL@ADDRESS>",
          "Language-Team": " LANGUAGE <LL@li.org>",
@@ -12,9 +12,17 @@
          "Content-Type": " text/plain; charset=CHARSET",
          "Content-Transfer-Encoding": " 8bit"
       },
-      "BrowserID requires cookies": [
+      "There was a problem with your signup link. Has this address already been registered?": [
          null,
-         "‮ԐɹoʍsǝɹIᗡ ɹǝbnıɹǝs ɔooʞıǝs"
+         "‮⊥ɥǝɹǝ ʍɐs ɐ dɹoqʅǝɯ ʍıʇɥ ʎonɹ sıƃund ʅıuʞ˙ Hɐs ʇɥıs ɐppɹǝss ɐʅɹǝɐpʎ qǝǝu ɹǝƃısʇǝɹǝp¿"
+      ],
+      "Error encountered trying to complete registration.": [
+         null,
+         "‮Ǝɹɹoɹ ǝuɔonuʇǝɹǝp ʇɹʎıuƃ ʇo ɔoɯdʅǝʇǝ ɹǝƃısʇɹɐʇıou˙"
+      ],
+      "Persona requires cookies": [
+         null,
+         "‮Ԁǝɹsouɐ ɹǝbnıɹǝs ɔooʞıǝs"
       ],
       "Please close this window, <a %s>enable cookies</a> and try again": [
          null,
@@ -26,47 +34,55 @@
       ],
       "Finishing Sign In...": [
          null,
-         "‮Ⅎıuısɥıuƃ Sıƃu Iu···"
+         "‮Ⅎıuısɥıuƃ Sıƃu Iu˙˙˙"
       ],
       "In just a moment you'll be signed into BrowserID.": [
          null,
-         "‮Iu ɾnsʇ ɐ ɯoɯǝuʇ ʎon,ʅʅ qǝ sıƃuǝp ıuʇo ԐɹoʍsǝɹIᗡ·"
+         "‮Iu ɾnsʇ ɐ ɯoɯǝuʇ ʎon,ʅʅ qǝ sıƃuǝp ıuʇo ԐɹoʍsǝɹIᗡ˙"
       ],
       "Please wait a few seconds while we sign you into the site.": [
          null,
-         "‮Ԁʅǝɐsǝ ʍɐıʇ ɐ ɟǝʍ sǝɔoups ʍɥıʅǝ ʍǝ sıƃu ʎon ıuʇo ʇɥǝ sıʇǝ·"
+         "‮Ԁʅǝɐsǝ ʍɐıʇ ɐ ɟǝʍ sǝɔoups ʍɥıʅǝ ʍǝ sıƃu ʎon ıuʇo ʇɥǝ sıʇǝ˙"
       ],
       "We are sorry, this request is taking a LOOONG time.": [
          null,
-         "‮Ｍǝ ɐɹǝ soɹɹʎ´ ʇɥıs ɹǝbnǝsʇ ıs ʇɐʞıuƃ ɐ ⅂OOON⅁ ʇıɯǝ·"
+         "‮Ｍǝ ɐɹǝ soɹɹʎ´ ʇɥıs ɹǝbnǝsʇ ıs ʇɐʞıuƃ ɐ ⅂OOON⅁ ʇıɯǝ˙"
       ],
       "This message will go away when the request completes (hopefully soon). If you wait too long, close this window and try again.": [
          null,
-         "‮⊥ɥıs ɯǝssɐƃǝ ʍıʅʅ ƃo ɐʍɐʎ ʍɥǝu ʇɥǝ ɹǝbnǝsʇ ɔoɯdʅǝʇǝs (ɥodǝɟnʅʅʎ soou)· Iɟ ʎon ʍɐıʇ ʇoo ʅouƃ´ ɔʅosǝ ʇɥıs ʍıupoʍ ɐup ʇɹʎ ɐƃɐıu·"
+         "‮⊥ɥıs ɯǝssɐƃǝ ʍıʅʅ ƃo ɐʍɐʎ ʍɥǝu ʇɥǝ ɹǝbnǝsʇ ɔoɯdʅǝʇǝs (ɥodǝɟnʅʅʎ soou)˙ Iɟ ʎon ʍɐıʇ ʇoo ʅouƃ´ ɔʅosǝ ʇɥıs ʍıupoʍ ɐup ʇɹʎ ɐƃɐıu˙"
       ],
-      "Sign in using": [
+      "The selected email is invalid or has been deleted.": [
          null,
-         "‮Sıƃu ıu nsıuƃ"
+         "‮⊥ɥǝ sǝʅǝɔʇǝp ǝɯɐıʅ ıs ıuʌɐʅıp oɹ ɥɐs qǝǝu pǝʅǝʇǝp˙"
       ],
-      "New email address": [
+      "Add another email address to your Persona password.": [
          null,
-         "‮Nǝʍ ǝɯɐıʅ ɐppɹǝss"
+         "‮∀pp ɐuoʇɥǝɹ ǝɯɐıʅ ɐppɹǝss ʇo ʎonɹ Ԁǝɹsouɐ dɐssʍoɹp˙"
+      ],
+      "email address": [
+         null,
+         "‮ǝɯɐıʅ ɐppɹǝss"
       ],
       "This field must be an email address.": [
          null,
-         "‮⊥ɥıs ɟıǝʅp ɯnsʇ qǝ ɐu ǝɯɐıʅ ɐppɹǝss·"
+         "‮⊥ɥıs ɟıǝʅp ɯnsʇ qǝ ɐu ǝɯɐıʅ ɐppɹǝss˙"
       ],
       "The email field is required.": [
          null,
-         "‮⊥ɥǝ ǝɯɐıʅ ɟıǝʅp ıs ɹǝbnıɹǝp·"
+         "‮⊥ɥǝ ǝɯɐıʅ ɟıǝʅp ıs ɹǝbnıɹǝp˙"
       ],
       "We just sent an email to that address! If you really want to send another, wait a minute or two and try again.": [
          null,
-         "‮Ｍǝ ɾnsʇ sǝuʇ ɐu ǝɯɐıʅ ʇo ʇɥɐʇ ɐppɹǝss¡ Iɟ ʎon ɹǝɐʅʅʎ ʍɐuʇ ʇo sǝup ɐuoʇɥǝɹ´ ʍɐıʇ ɐ ɯıunʇǝ oɹ ʇʍo ɐup ʇɹʎ ɐƃɐıu·"
+         "‮Ｍǝ ɾnsʇ sǝuʇ ɐu ǝɯɐıʅ ʇo ʇɥɐʇ ɐppɹǝss¡ Iɟ ʎon ɹǝɐʅʅʎ ʍɐuʇ ʇo sǝup ɐuoʇɥǝɹ´ ʍɐıʇ ɐ ɯıunʇǝ oɹ ʇʍo ɐup ʇɹʎ ɐƃɐıu˙"
       ],
       "That address is already added to your account!": [
          null,
          "‮⊥ɥɐʇ ɐppɹǝss ıs ɐʅɹǝɐpʎ ɐppǝp ʇo ʎonɹ ɐɔɔonuʇ¡"
+      ],
+      "Please hold on while we get information about your email provider.": [
+         null,
+         "‮Ԁʅǝɐsǝ ɥoʅp ou ʍɥıʅǝ ʍǝ ƃǝʇ ıuɟoɹɯɐʇıou ɐqonʇ ʎonɹ ǝɯɐıʅ dɹoʌıpǝɹ˙"
       ],
       "add": [
          null,
@@ -76,53 +92,53 @@
          null,
          "‮ɔɐuɔǝʅ"
       ],
-      "Email": [
+      "%s uses Persona instead of usernames to sign you in.": [
          null,
-         "‮Ǝɯɐıʅ"
+         "%s‮ nsǝs Ԁǝɹsouɐ ıusʇǝɐp oɟ nsǝɹuɐɯǝs ʇo sıƃu ʎon ıu˙"
       ],
-      "Enter your email address to sign in to <strong>%s</strong>": [
+      "To sign in with Persona, please enter your email address.": [
          null,
-         "‮Ǝuʇǝɹ ʎonɹ ǝɯɐıʅ ɐppɹǝss ʇo sıƃu ıu ʇo <strong>%s</strong>"
+         "‮⊥o sıƃu ıu ʍıʇɥ Ԁǝɹsouɐ´ dʅǝɐsǝ ǝuʇǝɹ ʎonɹ ǝɯɐıʅ ɐppɹǝss˙"
       ],
-      "Welcome to BrowserID!": [
+      "enter email address": [
          null,
-         "‮Ｍǝʅɔoɯǝ ʇo ԐɹoʍsǝɹIᗡ¡"
+         "‮ǝuʇǝɹ ǝɯɐıʅ ɐppɹǝss"
       ],
-      "This email looks new, so let's get you set up.": [
+      "Hold on while we check with your email provider.": [
          null,
-         "‮⊥ɥıs ǝɯɐıʅ ʅooʞs uǝʍ´ so ʅǝʇ,s ƃǝʇ ʎon sǝʇ nd·"
+         "‮Hoʅp ou ʍɥıʅǝ ʍǝ ɔɥǝɔʞ ʍıʇɥ ʎonɹ ǝɯɐıʅ dɹoʌıpǝɹ˙"
       ],
       "Password": [
          null,
          "‮Ԁɐssʍoɹp"
       ],
-      "forgot your password?": [
+      "password": [
          null,
-         "‮ɟoɹƃoʇ ʎonɹ dɐssʍoɹp?"
+         "‮dɐssʍoɹp"
       ],
       "The password field is required.": [
          null,
-         "‮⊥ɥǝ dɐssʍoɹp ɟıǝʅp ıs ɹǝbnıɹǝp·"
+         "‮⊥ɥǝ dɐssʍoɹp ɟıǝʅp ıs ɹǝbnıɹǝp˙"
       ],
       "The account cannot be logged in with this username and password.": [
          null,
-         "‮⊥ɥǝ ɐɔɔonuʇ ɔɐuuoʇ qǝ ʅoƃƃǝp ıu ʍıʇɥ ʇɥıs nsǝɹuɐɯǝ ɐup dɐssʍoɹp·"
-      ],
-      "By clicking %s, you confirm that you accept this site's <a %s>Terms of Use</a> and <a %s>Privacy Policy</a>.": [
-         null,
-         "‮Ԑʎ ɔʅıɔʞıuƃ %s‮´ ʎon ɔouɟıɹɯ ʇɥɐʇ ʎon ɐɔɔǝdʇ ʇɥıs sıʇǝ,s <ɐ %s‮>⊥ǝɹɯs oɟ ∩sǝ</a>‮ ɐup <ɐ %s‮>Ԁɹıʌɐɔʎ Ԁoʅıɔʎ</a>‮·"
+         "‮⊥ɥǝ ɐɔɔonuʇ ɔɐuuoʇ qǝ ʅoƃƃǝp ıu ʍıʇɥ ʇɥıs nsǝɹuɐɯǝ ɐup dɐssʍoɹp˙"
       ],
       "next": [
          null,
          "‮uǝxʇ"
       ],
-      "verify email": [
-         null,
-         "‮ʌǝɹıɟʎ ǝɯɐıʅ"
-      ],
       "sign in": [
          null,
          "‮sıƃu ıu"
+      ],
+      "Forgot your password?": [
+         null,
+         "‮Ⅎoɹƃoʇ ʎonɹ dɐssʍoɹp¿"
+      ],
+      "By proceeding, you agree to %s's <a %s>Terms</a> and <a %s>Privacy Policy</a>.": [
+         null,
+         "‮Ԑʎ dɹoɔǝǝpıuƃ´ ʎon ɐƃɹǝǝ ʇo %s‮,s <ɐ %s‮>⊥ǝɹɯs</a>‮ ɐup <ɐ %s‮>Ԁɹıʌɐɔʎ Ԁoʅıɔʎ</a>‮˙"
       ],
       "Cannot verify %s": [
          null,
@@ -130,55 +146,51 @@
       ],
       "%s is a required address, but we cannot verify that you own this address.": [
          null,
-         "%s‮ ıs ɐ ɹǝbnıɹǝp ɐppɹǝss´ qnʇ ʍǝ ɔɐuuoʇ ʌǝɹıɟʎ ʇɥɐʇ ʎon oʍu ʇɥıs ɐppɹǝss·"
+         "%s‮ ıs ɐ ɹǝbnıɹǝp ɐppɹǝss´ qnʇ ʍǝ ɔɐuuoʇ ʌǝɹıɟʎ ʇɥɐʇ ʎon oʍu ʇɥıs ɐppɹǝss˙"
       ],
-      "Check your email!": [
+      "Confirm your email address": [
          null,
-         "‮Ↄɥǝɔʞ ʎonɹ ǝɯɐıʅ¡"
+         "‮Ↄouɟıɹɯ ʎonɹ ǝɯɐıʅ ɐppɹǝss"
       ],
-      "We sent a confirmation email to <strong>%s</strong>": [
+      "Check your email at %s": [
          null,
-         "‮Ｍǝ sǝuʇ ɐ ɔouɟıɹɯɐʇıou ǝɯɐıʅ ʇo <strong>%s</strong>"
+         "‮Ↄɥǝɔʞ ʎonɹ ǝɯɐıʅ ɐʇ %s"
       ],
-      "To finish signing in just click the verify link we sent to your email address.": [
+      "Click the link in the confirmation email.  You'll then immediately be signed in to %s": [
          null,
-         "‮⊥o ɟıuısɥ sıƃuıuƃ ıu ɾnsʇ ɔʅıɔʞ ʇɥǝ ʌǝɹıɟʎ ʅıuʞ ʍǝ sǝuʇ ʇo ʎonɹ ǝɯɐıʅ ɐppɹǝss·"
+         "‮Ↄʅıɔʞ ʇɥǝ ʅıuʞ ıu ʇɥǝ ɔouɟıɹɯɐʇıou ǝɯɐıʅ˙  ⅄on,ʅʅ ʇɥǝu ıɯɯǝpıɐʇǝʅʎ qǝ sıƃuǝp ıu ʇo %s"
       ],
-      "If this is a mistake, just ignore the sent email and <a href=\"#\" id=\"cancel\">cancel</a>.": [
+      "If this is a mistake, just ignore the sent email and <a %s>cancel</a>.": [
          null,
-         "‮Iɟ ʇɥıs ıs ɐ ɯısʇɐʞǝ´ ɾnsʇ ıƃuoɹǝ ʇɥǝ sǝuʇ ǝɯɐıʅ ɐup <a href=\"#\" id=\"cancel\">‮ɔɐuɔǝʅ</a>‮·"
+         "‮Iɟ ʇɥıs ıs ɐ ɯısʇɐʞǝ´ ɾnsʇ ıƃuoɹǝ ʇɥǝ sǝuʇ ǝɯɐıʅ ɐup <ɐ %s‮>ɔɐuɔǝʅ</a>‮˙"
       ],
-      "If this is a mistake, just ignore the sent email and <a href=\"#\" id=\"back\">use another email address</a>.": [
+      "If this is a mistake, just ignore the sent email and <a %s>use another email address</a>.": [
          null,
-         "‮Iɟ ʇɥıs ıs ɐ ɯısʇɐʞǝ´ ɾnsʇ ıƃuoɹǝ ʇɥǝ sǝuʇ ǝɯɐıʅ ɐup <a href=\"#\" id=\"back\">‮nsǝ ɐuoʇɥǝɹ ǝɯɐıʅ ɐppɹǝss</a>‮·"
+         "‮Iɟ ʇɥıs ıs ɐ ɯısʇɐʞǝ´ ɾnsʇ ıƃuoɹǝ ʇɥǝ sǝuʇ ǝɯɐıʅ ɐup <ɐ %s‮>nsǝ ɐuoʇɥǝɹ ǝɯɐıʅ ɐppɹǝss</a>‮˙"
       ],
-      "We are very sorry, the server is under extreme load!": [
+      "We are very sorry.": [
          null,
-         "‮Ｍǝ ɐɹǝ ʌǝɹʎ soɹɹʎ´ ʇɥǝ sǝɹʌǝɹ ıs nupǝɹ ǝxʇɹǝɯǝ ʅoɐp¡"
+         "‮Ｍǝ ɐɹǝ ʌǝɹʎ soɹɹʎ˙"
       ],
-      "We are very sorry, there has been an error!": [
+      "The server is under extreme load!": [
          null,
-         "‮Ｍǝ ɐɹǝ ʌǝɹʎ soɹɹʎ´ ʇɥǝɹǝ ɥɐs qǝǝu ɐu ǝɹɹoɹ¡"
+         "‮⊥ɥǝ sǝɹʌǝɹ ıs nupǝɹ ǝxʇɹǝɯǝ ʅoɐp¡"
+      ],
+      "There has been an error!": [
+         null,
+         "‮⊥ɥǝɹǝ ɥɐs qǝǝu ɐu ǝɹɹoɹ¡"
       ],
       "Please reload the page and try again.": [
          null,
-         "‮Ԁʅǝɐsǝ ɹǝʅoɐp ʇɥǝ dɐƃǝ ɐup ʇɹʎ ɐƃɐıu·"
+         "‮Ԁʅǝɐsǝ ɹǝʅoɐp ʇɥǝ dɐƃǝ ɐup ʇɹʎ ɐƃɐıu˙"
       ],
       "Please close this window and try again.": [
          null,
-         "‮Ԁʅǝɐsǝ ɔʅosǝ ʇɥıs ʍıupoʍ ɐup ʇɹʎ ɐƃɐıu·"
+         "‮Ԁʅǝɐsǝ ɔʅosǝ ʇɥıs ʍıupoʍ ɐup ʇɹʎ ɐƃɐıu˙"
       ],
       "See more info": [
          null,
          "‮Sǝǝ ɯoɹǝ ıuɟo"
-      ],
-      "The site requested you sign in using": [
-         null,
-         "‮⊥ɥǝ sıʇǝ ɹǝbnǝsʇǝp ʎon sıƃu ıu nsıuƃ"
-      ],
-      "reset password": [
-         null,
-         "‮ɹǝsǝʇ dɐssʍoɹp"
       ],
       "*%s* is not a valid email address!": [
          null,
@@ -186,19 +198,55 @@
       ],
       "To continue, please close the window and enter a valid address.": [
          null,
-         "‮⊥o ɔouʇıunǝ´ dʅǝɐsǝ ɔʅosǝ ʇɥǝ ʍıupoʍ ɐup ǝuʇǝɹ ɐ ʌɐʅıp ɐppɹǝss·"
+         "‮⊥o ɔouʇıunǝ´ dʅǝɐsǝ ɔʅosǝ ʇɥǝ ʍıupoʍ ɐup ǝuʇǝɹ ɐ ʌɐʅıp ɐppɹǝss˙"
       ],
-      "This is not me...": [
+      "Remember You?": [
          null,
-         "‮⊥ɥıs ıs uoʇ ɯǝ···"
+         "‮ᴚǝɯǝɯqǝɹ ⅄on¿"
       ],
-      "Use a different email": [
+      "How long would you like to remain signed in with Persona?": [
          null,
-         "‮∩sǝ ɐ pıɟɟǝɹǝuʇ ǝɯɐıʅ"
+         "‮Hoʍ ʅouƃ ʍonʅp ʎon ʅıʞǝ ʇo ɹǝɯɐıu sıƃuǝp ıu ʍıʇɥ Ԁǝɹsouɐ¿"
       ],
-      "Always sign in using this email": [
+      "One month": [
          null,
-         "‮∀ʅʍɐʎs sıƃu ıu nsıuƃ ʇɥıs ǝɯɐıʅ"
+         "‮Ouǝ ɯouʇɥ"
+      ],
+      "I trust this computer.": [
+         null,
+         "‮I ʇɹnsʇ ʇɥıs ɔoɯdnʇǝɹ˙"
+      ],
+      "This session only": [
+         null,
+         "‮⊥ɥıs sǝssıou ouʅʎ"
+      ],
+      "This is not my computer.": [
+         null,
+         "‮⊥ɥıs ıs uoʇ ɯʎ ɔoɯdnʇǝɹ˙"
+      ],
+      "Note: You can of course sign out of Persona at any time.": [
+         null,
+         "‮Noʇǝ: ⅄on ɔɐu oɟ ɔonɹsǝ sıƃu onʇ oɟ Ԁǝɹsouɐ ɐʇ ɐuʎ ʇıɯǝ˙"
+      ],
+      "Sign in as...": [
+         null,
+         "‮Sıƃu ıu ɐs˙˙˙"
+      ],
+      "Add another email address": [
+         null,
+         "‮∀pp ɐuoʇɥǝɹ ǝɯɐıʅ ɐppɹǝss"
+      ],
+      "This is not me": [
+         null,
+         "‮⊥ɥıs ıs uoʇ ɯǝ"
+      ],
+      "Sign in using": [
+         null,
+         "‮Sıƃu ıu nsıuƃ"
+      ],
+      "Email": [
+         null,
+         "‮Ǝɯɐıʅ"
       ],
       "Address Verified!": [
          null,
@@ -206,19 +254,79 @@
       ],
       "Your identity has been verified with your email provider, we will now try to sign you in.": [
          null,
-         "‮⅄onɹ ıpǝuʇıʇʎ ɥɐs qǝǝu ʌǝɹıɟıǝp ʍıʇɥ ʎonɹ ǝɯɐıʅ dɹoʌıpǝɹ´ ʍǝ ʍıʅʅ uoʍ ʇɹʎ ʇo sıƃu ʎon ıu·"
+         "‮⅄onɹ ıpǝuʇıʇʎ ɥɐs qǝǝu ʌǝɹıɟıǝp ʍıʇɥ ʎonɹ ǝɯɐıʅ dɹoʌıpǝɹ´ ʍǝ ʍıʅʅ uoʍ ʇɹʎ ʇo sıƃu ʎon ıu˙"
+      ],
+      "The site requested you sign in using": [
+         null,
+         "‮⊥ɥǝ sıʇǝ ɹǝbnǝsʇǝp ʎon sıƃu ıu nsıuƃ"
       ],
       "You must sign in with your email provider to verify ownership of this address. This window will be redirected to": [
          null,
-         "‮⅄on ɯnsʇ sıƃu ıu ʍıʇɥ ʎonɹ ǝɯɐıʅ dɹoʌıpǝɹ ʇo ʌǝɹıɟʎ oʍuǝɹsɥıd oɟ ʇɥıs ɐppɹǝss· ⊥ɥıs ʍıupoʍ ʍıʅʅ qǝ ɹǝpıɹǝɔʇǝp ʇo"
+         "‮⅄on ɯnsʇ sıƃu ıu ʍıʇɥ ʎonɹ ǝɯɐıʅ dɹoʌıpǝɹ ʇo ʌǝɹıɟʎ oʍuǝɹsɥıd oɟ ʇɥıs ɐppɹǝss˙ ⊥ɥıs ʍıupoʍ ʍıʅʅ qǝ ɹǝpıɹǝɔʇǝp ʇo"
+      ],
+      "forgot your password?": [
+         null,
+         "‮ɟoɹƃoʇ ʎonɹ dɐssʍoɹp¿"
+      ],
+      "verify email": [
+         null,
+         "‮ʌǝɹıɟʎ ǝɯɐıʅ"
+      ],
+      "By proceeding, you agree to %s\\\\'s <a %s>Terms</a> and <a %s>Privacy Policy</a>.": [
+         null,
+         "‮Ԑʎ dɹoɔǝǝpıuƃ´ ʎon ɐƃɹǝǝ ʇo %s‮\\\\,s <ɐ %s‮>⊥ǝɹɯs</a>‮ ɐup <ɐ %s‮>Ԁɹıʌɐɔʎ Ԁoʅıɔʎ</a>‮˙"
+      ],
+      "Reset your password": [
+         null,
+         "‮ᴚǝsǝʇ ʎonɹ dɐssʍoɹp"
+      ],
+      "Your email address is new to Persona. Please create a password to use with Persona.": [
+         null,
+         "‮⅄onɹ ǝɯɐıʅ ɐppɹǝss ıs uǝʍ ʇo Ԁǝɹsouɐ˙ Ԁʅǝɐsǝ ɔɹǝɐʇǝ ɐ dɐssʍoɹp ʇo nsǝ ʍıʇɥ Ԁǝɹsouɐ˙"
+      ],
+      "Create a new password to use with %s.": [
+         null,
+         "‮Ↄɹǝɐʇǝ ɐ uǝʍ dɐssʍoɹp ʇo nsǝ ʍıʇɥ %s‮˙"
+      ],
+      "Create a password to use with %s.": [
+         null,
+         "‮Ↄɹǝɐʇǝ ɐ dɐssʍoɹp ʇo nsǝ ʍıʇɥ %s‮˙"
+      ],
+      "Password is required.": [
+         null,
+         "‮Ԁɐssʍoɹp ıs ɹǝbnıɹǝp˙"
+      ],
+      "Password must be between 8 and 80 characters long.": [
+         null,
+         "‮Ԁɐssʍoɹp ɯnsʇ qǝ qǝʇʍǝǝu 8‮ ɐup 80‮ ɔɥɐɹɐɔʇǝɹs ʅouƃ˙"
+      ],
+      "Verify Password": [
+         null,
+         "‮Ʌǝɹıɟʎ Ԁɐssʍoɹp"
+      ],
+      "Verification password is required.": [
+         null,
+         "‮Ʌǝɹıɟıɔɐʇıou dɐssʍoɹp ıs ɹǝbnıɹǝp˙"
+      ],
+      "Passwords do not match.": [
+         null,
+         "‮Ԁɐssʍoɹps po uoʇ ɯɐʇɔɥ˙"
+      ],
+      "reset password": [
+         null,
+         "‮ɹǝsǝʇ dɐssʍoɹp"
+      ],
+      "Note: This password will be used with all of your Persona email addresses.": [
+         null,
+         "‮Noʇǝ: ⊥ɥıs dɐssʍoɹp ʍıʅʅ qǝ nsǝp ʍıʇɥ ɐʅʅ oɟ ʎonɹ Ԁǝɹsouɐ ǝɯɐıʅ ɐppɹǝssǝs˙"
       ],
       "verify": [
          null,
          "‮ʌǝɹıɟʎ"
       ],
-      "Verify With Email Provider": [
+      "You must sign in with your email provider to verify ownership of this address. This window will be redirected to %s": [
          null,
-         "‮Ʌǝɹıɟʎ Ｍıʇɥ Ǝɯɐıʅ Ԁɹoʌıpǝɹ"
+         "‮⅄on ɯnsʇ sıƃu ıu ʍıʇɥ ʎonɹ ǝɯɐıʅ dɹoʌıpǝɹ ʇo ʌǝɹıɟʎ oʍuǝɹsɥıd oɟ ʇɥıs ɐppɹǝss˙ ⊥ɥıs ʍıupoʍ ʍıʅʅ qǝ ɹǝpıɹǝɔʇǝp ʇo %s"
       ]
    }
 }
