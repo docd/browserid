@@ -148,6 +148,10 @@ section > .contents {
     font-size: 13px;
 }
 
+.form_section p {
+    margin-top: 8px;
+}
+
 
 .contents > strong {
     display: none;

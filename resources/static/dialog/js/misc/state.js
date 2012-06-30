@@ -221,7 +221,9 @@ BrowserID.State = (function() {
 
         // Show the persona TOS/PP only to requiredEmail users who are creating
         // a new account.
-        personaTOSPP: requiredEmail && !addPrimaryUser
+        personaTOSPP: requiredEmail && !addPrimaryUser,
+        siteName: self.siteName,
+        idpName: info.idpName || URLParse(info.auth_url).host
       });
 
       if (primaryVerificationInfo) {

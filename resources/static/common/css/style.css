@@ -311,6 +311,11 @@ button.negative:active,
   margin-right: 15px;
 }
 
+.buttonrow > .right.emphasize {
+  margin-right: 0;
+  margin-top: 8px;
+}
+
 /*
 .submit #cancel {
   float: right;
