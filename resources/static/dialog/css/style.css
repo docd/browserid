@@ -66,6 +66,15 @@ header {
     background-image:         linear-gradient(top, rgba(0,0,0,.05), rgba(0,0,0,0));
 }
 
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+
 .home {
   width: 161px;
   height: 40px;
@@ -300,7 +309,6 @@ section > .contents {
 
 #favicon h2 {
     margin: 10px 0 0 0;
-    font-size: 20px;
 }
 
 #favicon h3 {
