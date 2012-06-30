@@ -12,6 +12,7 @@ body {
   background-image: url('/common/i/grain.png'),     -ms-linear-gradient(top, rgba(113, 126, 137, 0), rgba(113, 126, 137, 0.2));
   background-image: url('/common/i/grain.png'),      -o-linear-gradient(top, rgba(113, 126, 137, 0), rgba(113, 126, 137, 0.2));
   background-image: url('/common/i/grain.png'),         linear-gradient(top, rgba(113, 126, 137, 0), rgba(113, 126, 137, 0.2));
+  line-height: 18px;
 }
 
 #signIn {
@@ -341,10 +342,6 @@ div#required_email {
      * own bug.
      */
     padding-right: 1px;
-}
-
-.inputs {
-  line-height: 18px;
 }
 
 .inputs > li {

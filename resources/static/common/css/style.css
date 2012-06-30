@@ -56,6 +56,10 @@ ul, li {
   list-style-type: none;
 }
 
+strong {
+  font-weight: 700;
+}
+
 .hidden {
   visibility: hidden;
   height: 0;
@@ -404,14 +408,26 @@ footer .help {
   background-image: url("/common/i/grain.png"),         linear-gradient(top, #dadee1, #c7ccd0);
 }
 
+  /*
 #wait, #delay {
   text-align: center;
 }
+*/
+#wait .contents, #error .contents, #delay .contents {
+    max-width: 430px;
+    margin: 0 auto;
+}
 
+#wait h2, #delay h2 {
+    font-size: 20px;
+}
 
-#wait h2, #error h2, #delay h2 {
+#error h2 {
     font-size: 22px;
-    margin-bottom: 10px;
+}
+
+#wait p, #error p, #delay p {
+    margin-top: 20px;
 }
 
 #error .emphasis {
@@ -419,7 +435,7 @@ footer .help {
     color: #aa1401;
 }
 
-#error_contents {
+#error .contents, #wait .contents {
     max-width: 430px;
     margin: 0 auto;
 }

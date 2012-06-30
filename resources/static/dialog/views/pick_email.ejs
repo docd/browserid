@@ -12,9 +12,9 @@
       <ul class="inputs">
           <% _.each(identities, function(item, index) { var emailAddress = item.address, id = "email_" + index; %>
               <li>
-                  <label for="<%= id %>" class="<% if (emailAddress === siteemail) { %> preselected<% } %> selectable" title="<%= emailAddress %>" >
+                  <label for="<%= id %>" class="<% if (emailAddress === siteEmail) { %> preselected<% } %> selectable" title="<%= emailAddress %>" >
                     <input type="radio" name="email" id="<%= id %>" value="<%= emailAddress %>"
-                        <% if (emailAddress === siteemail) { %> checked="checked" <% } %>
+                        <% if (emailAddress === siteEmail) { %> checked="checked" <% } %>
                       />
                     <%= emailAddress %>
                   </label>

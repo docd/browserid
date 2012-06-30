@@ -11,13 +11,4 @@
     <p>
       <%= format(gettext('Click the link in the confirmation email.  You\'ll then immediately be signed in to %s'), ["<strong>" + siteName + "</strong>"]) %>
     </p>
-    <br />
-
-    <p>
-      <% if(required) { %>
-        <%= format(gettext('If this is a mistake, just ignore the sent email and <a %s>cancel</a>.'), [' href="#" id="back"']) %>
-      <% } else { %>
-        <%= format(gettext('If this is a mistake, just ignore the sent email and <a %s>use another email address</a>.'), [' href="#" id="back"']) %>
-      <% } %>
-    </p>
 
