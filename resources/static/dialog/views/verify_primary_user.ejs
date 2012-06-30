@@ -27,15 +27,15 @@
       </p>
 
 <% } else { %>
-	<h2>
+	<h3>
     <%= format(gettext("%s makes this easy"), [idpName]) %>
-  </h2>
+  </h3>
 
   <p>
     <%= format(gettext("Persona lets you use your %s account to sign into sites like %s."), [idpName, siteName]) %>
   </p>
   <p>
-    <%= format(gettext("We will redirect you to %s. Once you verify your account there, you will be signed in to %s."), [idpName, siteName]) %>
+    <%= format(gettext("Once you verify your account there, you will be signed in to %s."), [siteName]) %>
   </p>
     <p class="submit cf buttonrow">
         <button id="verifyWithPrimary"><%= format(gettext("sign in with %s"), [idpName]) %></button>
