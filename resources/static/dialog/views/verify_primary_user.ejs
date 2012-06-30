@@ -3,30 +3,6 @@
    - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
 
 <div class="cf form_section">
-<% if (requiredEmail) { %>
-      <ul class="inputs">
-
-          <li>
-              <label for="email"><%= gettext('Email') %></label>
-              <input id="required_email" type="email" value="<%= email %>" disabled />
-              <div id="could_not_add" class="tooltip" for="required_email">
-                <%= gettext("We just sent an email to that address! If you really want to send another, wait a minute or two and try again.") %>
-              </div>
-          </li>
-
-          <li class="small">
-              <%= gettext("You must sign in with your email provider to verify ownership of this address. This window will be redirected to") %>
-              <p>
-                  <strong><%= auth_url %></strong>.
-              </p>
-          </li>
-      </ul>
-
-      <p class="submit cf buttonrow">
-          <button id="verifyWithPrimary"><%= gettext("verify") %></button>
-      </p>
-
-<% } else { %>
 	<h3>
     <%= format(gettext("%s makes this easy"), [idpName]) %>
   </h3>
@@ -53,5 +29,4 @@
       </p>
     <% } %>
 
-<% } %>
 </div>
