@@ -3,7 +3,7 @@
       "": {
          "Project-Id-Version": " PACKAGE VERSION",
          "Report-Msgid-Bugs-To": " ",
-         "POT-Creation-Date": " 2012-03-02 15:24+0100",
+         "POT-Creation-Date": " 2012-06-30 14:10+0100",
          "PO-Revision-Date": " YEAR-MO-DA HO:MI+ZONE",
          "Last-Translator": " FULL NAME <EMAIL@ADDRESS>",
          "Language-Team": " LANGUAGE <LL@li.org>",
@@ -12,17 +12,13 @@
          "Content-Type": " text/plain; charset=CHARSET",
          "Content-Transfer-Encoding": " 8bit"
       },
-      "Complete Login to %s using BrowserID": [
+      "Confirm email address for Persona": [
          null,
-         "‮Ↄoɯdʅǝʇǝ ⅂oƃıu ʇo %s‮ nsıuƃ ԐɹoʍsǝɹIᗡ"
+         "‮Ↄouɟıɹɯ ǝɯɐıʅ ɐppɹǝss ɟoɹ Ԁǝɹsouɐ"
       ],
-      "Error encountered while attempting to confirm your address. Have you previously verified this address?": [
+      "Reset Persona password": [
          null,
-         "‮Ǝɹɹoɹ ǝuɔonuʇǝɹǝp ʍɥıʅǝ ɐʇʇǝɯdʇıuƃ ʇo ɔouɟıɹɯ ʎonɹ ɐppɹǝss· Hɐʌǝ ʎon dɹǝʌıonsʅʎ ʌǝɹıɟıǝp ʇɥıs ɐppɹǝss?"
-      ],
-      "Error encountered trying to complete registration.": [
-         null,
-         "‮Ǝɹɹoɹ ǝuɔonuʇǝɹǝp ʇɹʎıuƃ ʇo ɔoɯdʅǝʇǝ ɹǝƃısʇɹɐʇıou·"
+         "‮ᴚǝsǝʇ Ԁǝɹsouɐ dɐssʍoɹp"
       ],
       "Finish signing into:": [
          null,
@@ -40,37 +36,21 @@
          null,
          "‮⅄onɹ Ǝɯɐıʅ"
       ],
-      "New Password": [
+      "Password": [
          null,
-         "‮Nǝʍ Ԁɐssʍoɹp"
+         "‮Ԁɐssʍoɹp"
       ],
-      "Enter a Password": [
+      "Your Password": [
          null,
-         "‮Ǝuʇǝɹ ɐ Ԁɐssʍoɹp"
+         "‮⅄onɹ Ԁɐssʍoɹp"
       ],
       "Password is required.": [
          null,
-         "‮Ԁɐssʍoɹp ıs ɹǝbnıɹǝp·"
+         "‮Ԁɐssʍoɹp ıs ɹǝbnıɹǝp˙"
       ],
-      "Password must be between 8 and 80 characters long.": [
+      "The account cannot be verified with this username and password.": [
          null,
-         "‮Ԁɐssʍoɹp ɯnsʇ qǝ qǝʇʍǝǝu 8‮ ɐup 80‮ ɔɥɐɹɐɔʇǝɹs ʅouƃ·"
-      ],
-      "Verify Password": [
-         null,
-         "‮Ʌǝɹıɟʎ Ԁɐssʍoɹp"
-      ],
-      "Repeat Password": [
-         null,
-         "‮ᴚǝdǝɐʇ Ԁɐssʍoɹp"
-      ],
-      "Verification password is required.": [
-         null,
-         "‮Ʌǝɹıɟıɔɐʇıou dɐssʍoɹp ıs ɹǝbnıɹǝp·"
-      ],
-      "Passwords do not match.": [
-         null,
-         "‮Ԁɐssʍoɹps po uoʇ ɯɐʇɔɥ·"
+         "‮⊥ɥǝ ɐɔɔonuʇ ɔɐuuoʇ qǝ ʌǝɹıɟıǝp ʍıʇɥ ʇɥıs nsǝɹuɐɯǝ ɐup dɐssʍoɹp˙"
       ],
       "finish": [
          null,
@@ -80,41 +60,41 @@
          null,
          "<strong class=\"email\">‮⅄onɹ ɐppɹǝss</strong>‮ ɥɐs qǝǝu ʌǝɹıɟıǝp¡"
       ],
-      "Your new address is set up and you should now be signed in. You may now close this window and go back to": [
+      "Your new address is set up and ready to go. You will be redirected to %s": [
          null,
-         "‮⅄onɹ uǝʍ ɐppɹǝss ıs sǝʇ nd ɐup ʎon sɥonʅp uoʍ qǝ sıƃuǝp ıu· ⅄on ɯɐʎ uoʍ ɔʅosǝ ʇɥıs ʍıupoʍ ɐup ƃo qɐɔʞ ʇo"
+         "‮⅄onɹ uǝʍ ɐppɹǝss ıs sǝʇ nd ɐup ɹǝɐpʎ ʇo ƃo˙ ⅄on ʍıʅʅ qǝ ɹǝpıɹǝɔʇǝp ʇo %s"
       ],
-      "BrowserID requires cookies": [
+      "Redirecting in %s seconds": [
          null,
-         "‮ԐɹoʍsǝɹIᗡ ɹǝbnıɹǝs ɔooʞıǝs"
+         "‮ᴚǝpıɹǝɔʇıuƃ ıu %s‮ sǝɔoups"
+      ],
+      "Persona requires cookies": [
+         null,
+         "‮Ԁǝɹsouɐ ɹǝbnıɹǝs ɔooʞıǝs"
       ],
       "Please close this window, <a %s>enable cookies</a> and try again": [
          null,
          "‮Ԁʅǝɐsǝ ɔʅosǝ ʇɥıs ʍıupoʍ´ <ɐ %s‮>ǝuɐqʅǝ ɔooʞıǝs</a>‮ ɐup ʇɹʎ ɐƃɐıu"
       ],
-      "Communicating with server": [
+      "Connecting to Persona...": [
          null,
-         "‮Ↄoɯɯnuıɔɐʇıuƃ ʍıʇɥ sǝɹʌǝɹ"
+         "‮Ↄouuǝɔʇıuƃ ʇo Ԁǝɹsouɐ˙˙˙"
       ],
-      "Just a moment while we talk with the server.": [
+      "Mozilla Persona": [
          null,
-         "‮ſnsʇ ɐ ɯoɯǝuʇ ʍɥıʅǝ ʍǝ ʇɐʅʞ ʍıʇɥ ʇɥǝ sǝɹʌǝɹ·"
+         "‮Wozıʅʅɐ Ԁǝɹsouɐ"
       ],
-      "BrowserID": [
+      "<strong>Persona.</strong> Simplified sign-in, built by a non-profit.  <a %s>Learn more&rarr;</a>": [
          null,
-         "‮ԐɹoʍsǝɹIᗡ"
+         "<strong>‮Ԁǝɹsouɐ˙</strong>‮ Sıɯdʅıɟıǝp sıƃu-ıu´ qnıʅʇ qʎ ɐ uou-dɹoɟıʇ˙  <ɐ %s‮>⅂ǝɐɹu ɯoɹǝ&rarr;</a>"
       ],
-      "BrowserID is the fast and secure way to sign in &mdash; <a %s>learn more</a>": [
+      "Mozilla Persona: %s": [
          null,
-         "‮ԐɹoʍsǝɹIᗡ ıs ʇɥǝ ɟɐsʇ ɐup sǝɔnɹǝ ʍɐʎ ʇo sıƃu ıu &mdash;‮ <ɐ %s‮>ʅǝɐɹu ɯoɹǝ</a>"
+         "‮Wozıʅʅɐ Ԁǝɹsouɐ: %s"
       ],
-      "BrowserID: %s": [
+      "Persona Home": [
          null,
-         "‮ԐɹoʍsǝɹIᗡ: %s"
-      ],
-      "BrowserID Home": [
-         null,
-         "‮ԐɹoʍsǝɹIᗡ Hoɯǝ"
+         "‮Ԁǝɹsouɐ Hoɯǝ"
       ],
       "How it works": [
          null,
@@ -132,57 +112,65 @@
          null,
          "‮Sıƃu Onʇ"
       ],
-      "By the <a %s>Identity Team</a> @ <a %s>Mozilla Labs</a>": [
+      "By the <a %s>Identity Team</a> @ <a %s>Mozilla</a>": [
          null,
-         "‮Ԑʎ ʇɥǝ <ɐ %s‮>Ipǝuʇıʇʎ ⊥ǝɐɯ</a>‮ @ <ɐ %s‮>Wozıʅʅɐ ⅂ɐqs</a>"
+         "‮Ԑʎ ʇɥǝ <ɐ %s‮>Ipǝuʇıʇʎ ⊥ǝɐɯ</a>‮ @ <ɐ %s‮>Wozıʅʅɐ</a>"
       ],
-      "Privacy": [
+      "Privacy &rarr;": [
          null,
-         "‮Ԁɹıʌɐɔʎ"
+         "‮Ԁɹıʌɐɔʎ &rarr;"
       ],
-      "TOS": [
+      "TOS &rarr;": [
          null,
-         "‮⊥OS"
+         "‮⊥OS &rarr;"
       ],
-      "Need Help?": [
+      "Need Help? &rarr;": [
          null,
-         "‮Nǝǝp Hǝʅd?"
+         "‮Nǝǝp Hǝʅd¿ &rarr;"
       ],
-      "There was a problem with your signup link. Has this address already been registered?": [
+      "By proceeding, you agree to %s's <a %s>Terms</a> and <a %s>Privacy Policy</a>.": [
          null,
-         "‮⊥ɥǝɹǝ ʍɐs ɐ dɹoqʅǝɯ ʍıʇɥ ʎonɹ sıƃund ʅıuʞ· Hɐs ʇɥıs ɐppɹǝss ɐʅɹǝɐpʎ qǝǝu ɹǝƃısʇǝɹǝp?"
-      ],
-      "Error communicating with server.": [
-         null,
-         "‮Ǝɹɹoɹ ɔoɯɯnuıɔɐʇıuƃ ʍıʇɥ sǝɹʌǝɹ·"
+         "‮Ԑʎ dɹoɔǝǝpıuƃ´ ʎon ɐƃɹǝǝ ʇo %s‮,s <ɐ %s‮>⊥ǝɹɯs</a>‮ ɐup <ɐ %s‮>Ԁɹıʌɐɔʎ Ԁoʅıɔʎ</a>‮˙"
       ],
       "Last step!": [
          null,
          "‮⅂ɐsʇ sʇǝd¡"
       ],
-      "Thank you for signing up with <strong>BrowserID</strong>. You can now use your <strong>BrowserID</strong> account to <em>Sign In</em> or <em>Sign Up</em> to websites all across the web!": [
+      "Thank you for signing up with <strong>Persona</strong>. You can now use your Persona account to <em>Sign In</em> or <em>Sign Up</em> to websites all across the web!": [
          null,
-         "‮⊥ɥɐuʞ ʎon ɟoɹ sıƃuıuƃ nd ʍıʇɥ <strong>‮ԐɹoʍsǝɹIᗡ</strong>‮· ⅄on ɔɐu uoʍ nsǝ ʎonɹ <strong>‮ԐɹoʍsǝɹIᗡ</strong>‮ ɐɔɔonuʇ ʇo <em>‮Sıƃu Iu</em>‮ oɹ <em>‮Sıƃu ∩d</em>‮ ʇo ʍǝqsıʇǝs ɐʅʅ ɐɔɹoss ʇɥǝ ʍǝq¡"
+         "‮⊥ɥɐuʞ ʎon ɟoɹ sıƃuıuƃ nd ʍıʇɥ <strong>‮Ԁǝɹsouɐ</strong>‮˙ ⅄on ɔɐu uoʍ nsǝ ʎonɹ Ԁǝɹsouɐ ɐɔɔonuʇ ʇo <em>‮Sıƃu Iu</em>‮ oɹ <em>‮Sıƃu ∩d</em>‮ ʇo ʍǝqsıʇǝs ɐʅʅ ɐɔɹoss ʇɥǝ ʍǝq¡"
       ],
-      "Thanks for verifying your email address. This message is being sent to you to complete your sign-in to %s.": [
+      "Thank you for using Persona.": [
          null,
-         "‮⊥ɥɐuʞs ɟoɹ ʌǝɹıɟʎıuƃ ʎonɹ ǝɯɐıʅ ɐppɹǝss· ⊥ɥıs ɯǝssɐƃǝ ıs qǝıuƃ sǝuʇ ʇo ʎon ʇo ɔoɯdʅǝʇǝ ʎonɹ sıƃu-ıu ʇo %s‮·"
+         "‮⊥ɥɐuʞ ʎon ɟoɹ nsıuƃ Ԁǝɹsouɐ˙"
       ],
-      "Finish registration by clicking this link:": [
+      "Click to confirm this email address and automatically sign in to %s": [
          null,
-         "‮Ⅎıuısɥ ɹǝƃısʇɹɐʇıou qʎ ɔʅıɔʞıuƃ ʇɥıs ʅıuʞ:"
+         "‮Ↄʅıɔʞ ʇo ɔouɟıɹɯ ʇɥıs ǝɯɐıʅ ɐppɹǝss ɐup ɐnʇoɯɐʇıɔɐʅʅʎ sıƃu ıu ʇo %s"
       ],
-      "If you are NOT trying to sign into this site, just ignore this email.": [
+      "Note: If you are NOT trying to sign into %s, please ignore this email.": [
          null,
-         "‮Iɟ ʎon ɐɹǝ NO⊥ ʇɹʎıuƃ ʇo sıƃu ıuʇo ʇɥıs sıʇǝ´ ɾnsʇ ıƃuoɹǝ ʇɥıs ǝɯɐıʅ·"
+         "‮Noʇǝ: Iɟ ʎon ɐɹǝ NO⊥ ʇɹʎıuƃ ʇo sıƃu ıuʇo %s‮´ dʅǝɐsǝ ıƃuoɹǝ ʇɥıs ǝɯɐıʅ˙"
       ],
-      "Thanks,": [
+      "Thank you,": [
          null,
-         "‮⊥ɥɐuʞs´"
+         "‮⊥ɥɐuʞ ʎon´"
       ],
-      "(A better way to sign in)": [
+      "The Persona team": [
          null,
-         "‮(∀ qǝʇʇǝɹ ʍɐʎ ʇo sıƃu ıu)"
+         "‮⊥ɥǝ Ԁǝɹsouɐ ʇǝɐɯ"
+      ],
+      "Forgot your password for Persona?  It happens to the best of us.": [
+         null,
+         "‮Ⅎoɹƃoʇ ʎonɹ dɐssʍoɹp ɟoɹ Ԁǝɹsouɐ¿  Iʇ ɥɐddǝus ʇo ʇɥǝ qǝsʇ oɟ ns˙"
+      ],
+      "Click to reset your password:": [
+         null,
+         "‮Ↄʅıɔʞ ʇo ɹǝsǝʇ ʎonɹ dɐssʍoɹp:"
+      ],
+      "Note: If you did NOT ask to reset your password, please ignore this email.": [
+         null,
+         "‮Noʇǝ: Iɟ ʎon pıp NO⊥ ɐsʞ ʇo ɹǝsǝʇ ʎonɹ dɐssʍoɹp´ dʅǝɐsǝ ıƃuoɹǝ ʇɥıs ǝɯɐıʅ˙"
       ]
    }
 }
