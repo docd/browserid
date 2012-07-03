@@ -112,6 +112,7 @@ suite.addBatch({
       newpass: 'bogus' // too short
     }),
     "fails as expected": function(err, r) {
+      console.log(r.body);
       assert.strictEqual(JSON.parse(r.body).success, false);
     }
   }

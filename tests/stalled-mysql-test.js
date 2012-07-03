@@ -121,7 +121,7 @@ suite.addBatch({
   },
   "complete_email_addition": {
     topic: wsapi.post('/wsapi/complete_email_addition', {
-      token: 'bogus'
+      token: 'bogusbogusbogusbogusbogusbogusbogusbogusbogusbog'
     }),
     "fails with 503": function(err, r) {
       assert.strictEqual(r.code, 503);
@@ -129,7 +129,7 @@ suite.addBatch({
   },
   "complete_user_creation": {
     topic: wsapi.post('/wsapi/complete_user_creation', {
-      token: 'bogus',
+      token: 'bogusbogusbogusbogusbogusbogusbogusbogusbogusbog',
       pass: 'alsobogus'
     }),
     "fails with 503": function(err, r) {
