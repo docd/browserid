@@ -113,7 +113,24 @@ BrowserID.Network = (function() {
     complete(onComplete, status.status);
   }
 
+  function completeAddressVerification(wsapiName, token, password, onComplete, onFailure) {
+      post({
+        url: wsapiName,
+        data: {
+          token: token,
+          pass: password
+        },
+        success: function(status, textStatus, jqXHR) {
+          // If the user has successfully completed an address verification,
+          // they are authenticated to the password status.
+          if (status.success) auth_status = "password";
+          complete(onComplete, status.success);
+        },
+        error: onFailure
+      });
 
+    }
+  
   var Network = {
     /**
      * Initialize - Clear all context info. Used for testing.
@@ -297,19 +314,7 @@ BrowserID.Network = (function() {
      * @param {function} [onComplete] - Called when complete.
      * @param {function} [onFailure] - Called on XHR failure.
      */
-    completeUserRegistration: function(token, password, onComplete, onFailure) {
-      post({
-        url: "/wsapi/complete_user_creation",
-        data: {
-          token: token,
-          pass: password
-        },
-        success: function(status, textStatus, jqXHR) {
-          complete(onComplete, status.success);
-        },
-        error: onFailure
-      });
-    },
+    completeUserRegistration: completeAddressVerification.curry("/wsapi/complete_user_creation"),
 
     /**
      * Call with a token to prove an email address ownership.
@@ -320,19 +325,7 @@ BrowserID.Network = (function() {
      * with one boolean parameter that specifies the validity of the token.
      * @param {function} [onFailure] - Called on XHR failure.
      */
-    completeEmailRegistration: function(token, password, onComplete, onFailure) {
-      post({
-        url: "/wsapi/complete_email_addition",
-        data: {
-          token: token,
-          pass: password
-        },
-        success: function(status, textStatus, jqXHR) {
-          complete(onComplete, status.success);
-        },
-        error: onFailure
-      });
-    },
+    completeEmailRegistration: completeAddressVerification.curry("/wsapi/complete_email_confirmation"),
 
     /**
      * Request a password reset for the given email address.
@@ -360,19 +353,57 @@ BrowserID.Network = (function() {
      * @param {function} [onComplete] - Called when complete.
      * @param {function} [onFailure] - Called on XHR failure.
      */
-    completePasswordReset: function(token, password, onComplete, onFailure) {
-      post({
-        url: "/wsapi/complete_reset",
-        data: {
-          token: token,
-          pass: password
-        },
-        success: function(status, textStatus, jqXHR) {
-          complete(onComplete, status.success);
-        },
+    completePasswordReset: completeAddressVerification.curry("/wsapi/complete_reset"),
+
+    /**
+     * Check the registration status of a password reset
+     * @method checkPasswordReset
+     * @param {function} [onsuccess] - called when complete.
+     * @param {function} [onfailure] - called on xhr failure.
+     */
+    checkPasswordReset: function(email, onComplete, onFailure) {
+      get({
+        url: "/wsapi/password_reset_status?email=" + encodeURIComponent(email),
+        success: handleAddressVerifyCheckResponse.curry(onComplete),
         error: onFailure
       });
     },
+
+    /**
+     * Stage an email reverification.
+     * @method requestEmailReverify
+     * @param {string} email
+     * @param {string} origin - site user is trying to sign in to.
+     * @param {function} [onComplete] - Callback to call when complete.
+     * @param {function} [onFailure] - Called on XHR failure.
+     */
+    requestEmailReverify: function(email, origin, onComplete, onFailure) {
+      var postData = {
+        email: email,
+        site : origin
+      };
+      stageAddressForVerification(postData, "/wsapi/stage_reverify", onComplete, onFailure);
+    },
+
+    // the verification page for reverifying an email and adding an email to an
+    // account are the same, both are handled by the /confirm page. the
+    // /confirm page uses the verifyEmail function.  completeEmailReverify is
+    // not needed.
+
+    /**
+     * Check the registration status of an email reverification
+     * @method checkEmailReverify
+     * @param {function} [onsuccess] - called when complete.
+     * @param {function} [onfailure] - called on xhr failure.
+     */
+    checkEmailReverify: function(email, onComplete, onFailure) {
+      get({
+        url: "/wsapi/email_reverify_status?email=" + encodeURIComponent(email),
+        success: handleAddressVerifyCheckResponse.curry(onComplete),
+        error: onFailure
+      });
+    },
+
 
     /**
      * Check the registration status of a password reset
