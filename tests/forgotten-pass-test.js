@@ -181,8 +181,6 @@ suite.addBatch({
     },
     "account created": function(err, r) {
       assert.equal(r.code, 200);
-      console.log('body', r.body);
-      console.log(r);
       var body = JSON.parse(r.body);
       assert.strictEqual(body.success, true);
     }
