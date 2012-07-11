@@ -130,7 +130,7 @@ BrowserID.Network = (function() {
       });
 
     }
-  
+
   var Network = {
     /**
      * Initialize - Clear all context info. Used for testing.
@@ -389,73 +389,6 @@ BrowserID.Network = (function() {
     // account are the same, both are handled by the /confirm page. the
     // /confirm page uses the verifyEmail function.  completeEmailReverify is
     // not needed.
-
-    /**
-     * Check the registration status of an email reverification
-     * @method checkEmailReverify
-     * @param {function} [onsuccess] - called when complete.
-     * @param {function} [onfailure] - called on xhr failure.
-     */
-    checkEmailReverify: function(email, onComplete, onFailure) {
-      get({
-        url: "/wsapi/email_reverify_status?email=" + encodeURIComponent(email),
-        success: handleAddressVerifyCheckResponse.curry(onComplete),
-        error: onFailure
-      });
-    },
-
-
-    /**
-     * Check the registration status of a password reset
-     * @method checkPasswordReset
-     * @param {function} [onsuccess] - called when complete.
-     * @param {function} [onfailure] - called on xhr failure.
-     */
-    checkPasswordReset: function(email, onComplete, onFailure) {
-      get({
-        url: "/wsapi/password_reset_status?email=" + encodeURIComponent(email),
-        success: handleAddressVerifyCheckResponse.curry(onComplete),
-        error: onFailure
-      });
-    },
-
-    /**
-     * Stage an email reverification.
-     * @method requestEmailReverify
-     * @param {string} email
-     * @param {string} origin - site user is trying to sign in to.
-     * @param {function} [onComplete] - Callback to call when complete.
-     * @param {function} [onFailure] - Called on XHR failure.
-     */
-    requestEmailReverify: function(email, origin, onComplete, onFailure) {
-      var postData = {
-        email: email,
-        site : origin
-      };
-      stageAddressForVerification(postData, "/wsapi/stage_reverify", onComplete, onFailure);
-    },
-
-    /**
-     * Complete email reverification
-     * @method completeEmailReverify
-     * @param {string} token - token to register for.
-     * @param {string} password
-     * @param {function} [onComplete] - Called when complete.
-     * @param {function} [onFailure] - Called on XHR failure.
-     */
-    completeEmailReverify: function(token, password, onComplete, onFailure) {
-      post({
-        url: "/wsapi/complete_reverify",
-        data: {
-          token: token,
-          pass: password
-        },
-        success: function(status, textStatus, jqXHR) {
-          complete(onComplete, status.success);
-        },
-        error: onFailure
-      });
-    },
 
     /**
      * Check the registration status of an email reverification
