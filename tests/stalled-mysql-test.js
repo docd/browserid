@@ -138,7 +138,7 @@ suite.addBatch({
   },
   "email_for_token": {
     topic: wsapi.get('/wsapi/email_for_token', {
-      token: 'bogus'
+      token: 'bogusbogusbogusbogusbogusbogusbogusbogusbogusbog'
     }),
     "fails with 503": function(err, r) {
       assert.strictEqual(r.code, 503);
@@ -229,7 +229,7 @@ suite.addBatch({
   "cert_key": {
     topic: wsapi.post('/wsapi/cert_key', {
       email: "test@whatev.er",
-      pubkey: "bogus",
+      pubkey: JSON.stringify("bogusbogusbogusbogusbogusbogusbogusbogusbogusbogusbogus"),
       ephemeral: false
     }),
     "fails with 503": function(err, r) {
